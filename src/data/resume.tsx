@@ -178,7 +178,10 @@ export const DATA = {
         },
       ],
       image: '',
-      video: '/tuba_1.mp4',
+      video:
+        process.env.NODE_ENV === 'production'
+          ? '/profolio/tuba_1.mp4'
+          : '/tuba_1.mp4',
       isYoutubeVideo: false,
     },
     {

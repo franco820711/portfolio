@@ -220,7 +220,7 @@ export default function Page() {
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
-                  image={getImagePath(project.image)}
+                  image={project.image}
                   video={project.video}
                   isYoutubeVideo={project.isYoutubeVideo}
                   links={project.links}
