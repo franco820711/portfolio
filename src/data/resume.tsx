@@ -50,14 +50,14 @@ export const DATA = {
     social: {
       GitHub: {
         name: 'GitHub',
-        url: 'https://franco19930711.github.io/',
+        url: 'https://github.com/franco820711',
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: 'LinkedIn',
-        url: 'https://dub.sh/dillion-linkedin',
+        url: 'https://www.linkedin.com/in/wei-peng-889670112',
         icon: Icons.linkedin,
 
         navbar: true,
@@ -91,7 +91,7 @@ export const DATA = {
       href: '#',
       badges: [],
       location: '遠端',
-      title: '全端工程師',
+      title: '全端工程師 / 遠端',
       logoUrl: '',
       start: 'November 2022',
       end: 'Present',
