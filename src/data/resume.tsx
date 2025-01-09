@@ -180,7 +180,7 @@ export const DATA = {
       image: '',
       video:
         process.env.NODE_ENV === 'production'
-          ? '/profolio/tuba_1.mp4'
+          ? '/portfolio/tuba_1.mp4'
           : '/tuba_1.mp4',
       isYoutubeVideo: false,
     },
