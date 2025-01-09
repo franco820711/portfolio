@@ -8,6 +8,7 @@ import { Badge } from '@/components/ui/badge';
 import { DATA } from '@/data/resume';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
+import { getImagePath } from '@/lib/utils';
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -32,7 +33,7 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                <AvatarImage alt={DATA.name} src={getImagePath(DATA.avatarUrl)} />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -61,7 +62,7 @@ export default function Page() {
             >
               <ResumeCard
                 key={work.company}
-                logoUrl={work.logoUrl}
+                logoUrl={getImagePath(work.logoUrl)}
                 altText={work.company}
                 title={work.company}
                 subtitle={work.title}
@@ -87,7 +88,7 @@ export default function Page() {
               <ResumeCard
                 key={education.school}
                 href={education.href}
-                logoUrl={education.logoUrl}
+                logoUrl={getImagePath(education.logoUrl)}
                 altText={education.school}
                 title={education.school}
                 subtitle={education.degree}
@@ -176,7 +177,7 @@ export default function Page() {
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
-                  image={project.image}
+                  image={getImagePath(project.image)}
                   video={project.video}
                   isYoutubeVideo={project.isYoutubeVideo}
                   links={project.links}
@@ -217,7 +218,7 @@ export default function Page() {
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
-                  image={project.image}
+                  image={getImagePath(project.image)}
                   video={project.video}
                   isYoutubeVideo={project.isYoutubeVideo}
                   links={project.links}
@@ -262,7 +263,7 @@ export default function Page() {
                     description={project.description}
                     location={project.location}
                     dates={project.dates}
-                    image={project.image}
+                    image={getImagePath(project.image)}
                     links={project.links}
                   />
                 </BlurFade>

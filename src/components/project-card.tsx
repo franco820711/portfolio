@@ -6,7 +6,7 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card';
-import { cn } from '@/lib/utils';
+import { cn, getImagePath } from '@/lib/utils';
 import Image from 'next/image';
 import Link from 'next/link';
 import Markdown from 'react-markdown';
@@ -75,11 +75,11 @@ export function ProjectCard({
         )}
         {image && (
           <Image
-            src={image}
+            src={getImagePath(image) || ''}
+            width={1200}
+            height={630}
             alt={title}
-            width={500}
-            height={300}
-            className="aspect-video w-full overflow-hidden object-cover object-top"
+            className="aspect-video w-full rounded-xl object-cover"
           />
         )}
       </Link>
