@@ -37,6 +37,7 @@ export function formatDate(date: string) {
 }
 
 export function getImagePath(path: string) {
-  const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
-  return `${basePath}${path}`;
+  if (!path) return '';
+  if (path.startsWith('http')) return path;
+  return path;
 }
