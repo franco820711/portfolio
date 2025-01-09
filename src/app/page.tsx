@@ -33,7 +33,10 @@ export default function Page() {
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <Avatar className="size-28 border">
-                <AvatarImage alt={DATA.name} src={getImagePath(DATA.avatarUrl)} />
+                <AvatarImage
+                  alt={DATA.name}
+                  src={getImagePath(DATA.avatarUrl)}
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -177,7 +180,7 @@ export default function Page() {
                   description={project.description}
                   dates={project.dates}
                   tags={project.technologies}
-                  image={getImagePath(project.image)}
+                  image={project.image}
                   video={project.video}
                   isYoutubeVideo={project.isYoutubeVideo}
                   links={project.links}
