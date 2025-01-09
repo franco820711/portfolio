@@ -95,7 +95,7 @@ export const DATA = {
       logoUrl: '',
       start: 'November 2022',
       end: 'Present',
-      description: `- 領導 2 人團隊開發多個全端專案 (4+)，涵蓋網頁應用、行動應用與 AI 應用，建立可重用元件庫，提升 40% 開發效率。\n- 實踐 Clean Code 原則，建立模組化設計模式，維護成本降低。\n- 使用 Jira、Trello 進行敏捷開發管理，優化工作流程與 Code Review 制度，確保程式碼品質`,
+      description: `- 領導 2 人團隊開發多個全端專案 (4+)，涵蓋網頁應用、行動應用與 AI 應用，建立可重用元件庫，提升開發效率。\n- 實踐 Clean Code 原則，建立後端模組化設計模式，維護成本降低。\n- 使用 Jira、Trello 進行開發管理，優化工作流程與 確保程式碼品質。`,
     },
     {
       company: '達邁科技',
