@@ -9,7 +9,7 @@ export const DATA = {
   locationLink: 'https://www.google.com/maps/place/taiwan',
   description: '熱衷於解決複雜問題，並打造具有影響力的產品。',
   summary:
-    '全端工程師，具化工碩士背景，擅長將邏輯思維與問題解決能力應用於前後端開發與維運。曾帶領團隊成功上線多款產品，涵蓋 AI 應用與系統開發。重視技術深度與產品迭代，持續提升專業技能。',
+    '全端工程師，具化工碩士背景，擅長將邏輯思維與問題解決能力應用於前後端開發與維運。曾獨立完成多款產品的開發與上線，涵蓋 AI 應用與系統開發。重視技術深度與產品迭代，持續提升專業技能。',
   avatarUrl: '/avatar.png',
   skills: {
     frontend: [
@@ -213,6 +213,11 @@ export const DATA = {
       technologies: ['Flutter', 'Dart', 'Firebase'],
       links: [
         {
+          type: 'Website',
+          href: 'https://apps.apple.com/us/app/doggycatty-%E7%8B%97%E7%8B%97%E8%B2%93%E8%B2%93%E9%A0%98%E9%A4%8A%E8%B6%A3/id6479363250',
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
           type: 'Video',
           href: 'https://youtube.com/shorts/qOL1-YEVpMY?feature=share',
           icon: <Icons.youtube className="size-3" />,
@@ -254,7 +259,7 @@ export const DATA = {
       dates: 'November 2024 - Present',
       active: true,
       description:
-        '這款AI事件記錄應用，旨在幫助用戶輕鬆記錄各種日常事件，無論是工作、生活還是特殊事件，AI技術能夠智能分析並整理資訊，提供便捷的查詢與回顧功能。讓記錄與管理事件變得更加簡單、直觀，無需繁瑣操作。',
+        'Memoizer 是一款語音事件記錄 Web App，用戶可透過語音快速記錄工作、生活或特殊事件。AI 技術能智能分析並整理資訊，提供便捷的查詢與回顧功能，讓事件管理更高效直觀。',
       technologies: ['NextJS', 'NestJS', 'Typescript', 'Docker'],
       links: [],
       image: '/cover7.png',
@@ -280,7 +285,7 @@ export const DATA = {
       dates: 'March 2023 - Present',
       active: true,
       description:
-        '這款專為狗狗飼主設計的代客遛狗服務應用，讓飼主能夠輕鬆追蹤遛狗保姆的進度，並即時掌握狗狗的動態。保姆則可在遛狗過程中紀錄狗狗的狀態，拍攝精彩時刻並與飼主分享，提升飼主與狗狗之間的互動。',
+        '這款為狗狗飼主設計的代客遛狗應用，讓飼主輕鬆追蹤保姆進度，隨時掌握狗狗動態。保姆可即時記錄狗狗狀態，分享精彩時刻，增進飼主與狗狗的互動。',
       technologies: ['Flutter', 'Dart', 'Firebase'],
       links: [],
       image: '/cover5.jpg',
