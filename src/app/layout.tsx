@@ -57,11 +57,15 @@ export default function RootLayout({
   return (
     <html lang="zh-TW" suppressHydrationWarning>
       <head>
+        <meta
+          httpEquiv="Content-Security-Policy"
+          content="default-src 'self' https://umami.tubagym2024.com; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://umami.tubagym2024.com; connect-src 'self' https://umami.tubagym2024.com; style-src 'self' 'unsafe-inline';"
+        />
         {process.env.NODE_ENV === 'production' && (
           <Script
             defer
             src="https://umami.tubagym2024.com/script.js"
-            data-website-id="b5489087-3767-434b-a871-6211e50a2b8e"
+            data-website-id="de5770da-4629-4374-9d91-b5c27bd7cc0f"
           />
         )}
       </head>
@@ -71,10 +75,10 @@ export default function RootLayout({
           fontSans.variable
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="light">
-          <TooltipProvider delayDuration={0}>
-            {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <TooltipProvider>
             <Navbar />
+            {children}
           </TooltipProvider>
         </ThemeProvider>
       </body>

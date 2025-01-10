@@ -161,7 +161,7 @@ export default function Page() {
                   瀏覽我的作品
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  我的專案包含Web和Mobile APP，以下是一些我最喜歡的。
+                  我的專案包含Web和Mobile APP。
                 </p>
               </div>
             </div>

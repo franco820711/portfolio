@@ -91,7 +91,7 @@ export const DATA = {
       href: '#',
       badges: [],
       location: '遠端',
-      title: '全端工程師 / 遠端',
+      title: '全端工程師',
       logoUrl: '',
       start: 'November 2022',
       end: 'Present',
@@ -113,7 +113,7 @@ export const DATA = {
     {
       school: '中興大學',
       href: '#',
-      degree: '化工碩士',
+      degree: '化學工程所',
       logoUrl: '/NCHU_Badge.png',
       start: '2015',
       end: '2017',
@@ -121,10 +121,10 @@ export const DATA = {
     {
       school: '中原大學',
       href: '#',
-      degree: '化工學士',
+      degree: '化學工程系',
       logoUrl: '/CYCU.png',
       start: '2011',
-      end: '2014',
+      end: '2015',
     },
   ],
   projects: [
