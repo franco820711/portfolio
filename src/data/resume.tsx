@@ -287,7 +287,13 @@ export const DATA = {
       description:
         '這款為狗狗飼主設計的代客遛狗應用，讓飼主輕鬆追蹤保姆進度，隨時掌握狗狗動態。保姆可即時記錄狗狗狀態，分享精彩時刻，增進飼主與狗狗的互動。',
       technologies: ['Flutter', 'Dart', 'Firebase'],
-      links: [],
+      links: [
+        {
+          type: 'TestFlight',
+          href: 'https://testflight.apple.com/join/RES4ujbm',
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
       image: '/cover5.jpg',
       video: '',
       isYoutubeVideo: false,
