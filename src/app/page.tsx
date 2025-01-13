@@ -1,13 +1,13 @@
-import BlurFade from '@/components/magicui/blur-fade';
-import BlurFadeText from '@/components/magicui/blur-fade-text';
-import { ProjectCard } from '@/components/project-card';
-import { ResumeCard } from '@/components/resume-card';
-import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Badge } from '@/components/ui/badge';
-import { DATA } from '@/data/resume';
-import { getImagePath } from '@/lib/utils';
-import Link from 'next/link';
-import Markdown from 'react-markdown';
+import BlurFade from "@/components/magicui/blur-fade";
+import BlurFadeText from "@/components/magicui/blur-fade-text";
+import { ProjectCard } from "@/components/project-card";
+import { ResumeCard } from "@/components/resume-card";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Badge } from "@/components/ui/badge";
+import { DATA } from "@/data/resume";
+import { getImagePath } from "@/lib/utils";
+import Link from "next/link";
+import Markdown from "react-markdown";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -22,7 +22,7 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none"
                 yOffset={8}
-                text={`Hi, I'm ${DATA.name.split(' ')[0]} 👋`}
+                text={`Hi, I'm ${DATA.name.split(" ")[0]} 👋`}
               />
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
@@ -70,7 +70,7 @@ export default function Page() {
                 subtitle={work.title}
                 href={work.href}
                 badges={work.badges}
-                period={`${work.start} - ${work.end ?? 'Present'}`}
+                period={`${work.start} - ${work.end ?? "Present"}`}
                 description={work.description}
               />
             </BlurFade>
@@ -299,7 +299,7 @@ export default function Page() {
                 >
                   {` ${DATA.contact.email} `}
                 </Link>
-                我就會回應。請不要發送任何廣告或不雅訊息。
+                {/* 我就會回應。請不要發送任何廣告或不雅訊息。 */}
               </p>
             </div>
           </BlurFade>
